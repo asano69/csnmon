@@ -1,4 +1,4 @@
-import { Ya, r } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya, r } from "../chunks/chunk-GCRJFCUZ.js";
 import { fZ, mZ } from "./chunk_dZ.js";
 const gZ = r("src/client/js/routes/middlewares/assets-cache.js");
 export async function hZ(e, t) {

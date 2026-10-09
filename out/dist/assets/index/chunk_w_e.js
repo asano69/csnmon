@@ -1,4 +1,4 @@
-import { Ya, p, r, y } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya, p, r, y } from "../chunks/chunk-GCRJFCUZ.js";
 import { vg } from "./chunk_L9.js";
 export const w_e = r("src/client/js/routes/project-list.js");
 const U_e = r("src/client/js/routes/project-invitation.js");

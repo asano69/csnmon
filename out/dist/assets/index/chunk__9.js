@@ -1,4 +1,4 @@
-import { Ya, x } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya, x } from "../chunks/chunk-GCRJFCUZ.js";
 import { a as a_1 } from "../chunks/chunk-FXCI2R73.js";
 import { on, pd, y9 } from "./chunk_bg.js";
 export function _9({ searchQuery, children }) {

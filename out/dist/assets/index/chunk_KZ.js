@@ -1,4 +1,4 @@
-import { Ya } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya } from "../chunks/chunk-GCRJFCUZ.js";
 const KZ = "data-project-theme";
 export function YZ() {
     let e = Ya.Layout.get();

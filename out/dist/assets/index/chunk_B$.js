@@ -1,4 +1,4 @@
-import { Za } from "../chunks/chunk-3PYJHPBQ.js";
+import { Za } from "../chunks/chunk-GCRJFCUZ.js";
 import { e } from "../chunks/chunk-FXCI2R73.js";
 export const B$ = [
     "http:",

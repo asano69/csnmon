@@ -1,21 +1,21 @@
-import { Ji, yp, zc } from "./chunk-3PYJHPBQ/chunk_yp.js";
-import { pm } from "./chunk-3PYJHPBQ/chunk_lm.js";
-import { Dg, ws } from "./chunk-3PYJHPBQ/chunk_ws.js";
-import { Cy } from "./chunk-3PYJHPBQ/chunk__y.js";
-import { MC } from "./chunk-3PYJHPBQ/chunk_tx.js";
-import { lh } from "./chunk-3PYJHPBQ/chunk_cx.js";
-import { $i, dP, mP, wse } from "./chunk-3PYJHPBQ/chunk_dP.js";
-import { PP } from "./chunk-3PYJHPBQ/chunk_wP.js";
-import { cL } from "./chunk-3PYJHPBQ/chunk_sL.js";
-import { HT, hs } from "./chunk-3PYJHPBQ/chunk_qT.js";
-import { al, ol } from "./chunk-3PYJHPBQ/chunk_GT.js";
-import { cl, dn } from "./chunk-3PYJHPBQ/chunk_og.js";
-import { Bl, xa } from "./chunk-3PYJHPBQ/chunk_xa.js";
-import { EP, Zt } from "./chunk-3PYJHPBQ/chunk_Zt.js";
-import { no } from "./chunk-3PYJHPBQ/chunk_HB_2.js";
-import { KB, uC } from "./chunk-3PYJHPBQ/chunk_uC.js";
-import { U2 } from "./chunk-3PYJHPBQ/chunk_B2.js";
-import { G2 } from "./chunk-3PYJHPBQ/chunk_pP.js";
+import { Ji, yp, zc } from "./chunk-GCRJFCUZ/chunk_yp.js";
+import { pm } from "./chunk-GCRJFCUZ/chunk_lm.js";
+import { Dg, ws } from "./chunk-GCRJFCUZ/chunk_ws.js";
+import { Cy } from "./chunk-GCRJFCUZ/chunk__y.js";
+import { MC } from "./chunk-GCRJFCUZ/chunk_tx.js";
+import { lh } from "./chunk-GCRJFCUZ/chunk_cx.js";
+import { $i, dP, mP, wse } from "./chunk-GCRJFCUZ/chunk_dP.js";
+import { PP } from "./chunk-GCRJFCUZ/chunk_wP.js";
+import { cL } from "./chunk-GCRJFCUZ/chunk_sL.js";
+import { HT, hs } from "./chunk-GCRJFCUZ/chunk_qT.js";
+import { al, ol } from "./chunk-GCRJFCUZ/chunk_GT.js";
+import { cl, dn } from "./chunk-GCRJFCUZ/chunk_og.js";
+import { Bl, xa } from "./chunk-GCRJFCUZ/chunk_xa.js";
+import { EP, Zt } from "./chunk-GCRJFCUZ/chunk_Zt.js";
+import { no } from "./chunk-GCRJFCUZ/chunk_HB_2.js";
+import { KB, uC } from "./chunk-GCRJFCUZ/chunk_uC.js";
+import { U2 } from "./chunk-GCRJFCUZ/chunk_B2.js";
+import { G2 } from "./chunk-GCRJFCUZ/chunk_pP.js";
 import { a as a_1 } from "./chunk-FTBZRL4G.js";
 import { A as A_1, C as C_1, G as G_1, J as J_1, K as K_1, b as b_1, c as c_1, e as e_1, g as g_1, i, k as k_1, m, x as x_1 } from "./chunk-UCL6J5NE.js";
 import { a as a_2, b as b_2, c as c_2, d as d_1, e as e_2 } from "./chunk-FXCI2R73.js";
@@ -1802,7 +1802,7 @@ a_2(Ne, "hasDom");
 const MA = Ne() ? `${location.protocol}//${location.host}` : process.env.APP_URL;
 export const ha = new RegExp(`^${MA}/files/([a-z0-9]{24})(?:|\\.[a-zA-Z0-9]+)(?:|\\?[^\\s]*)$`);
 const be = a_2((t)=>t.match(ha)[1], "parseFileId");
-const FA = /\[(https?:\/\/[^\]\s]+\.(?:mp4|webm|mov))\]/i;
+const FA = /\[(https?:\/\/(?=[^\]\s]+\])[^\]\s]+\.(?:mp4|webm|mov)(?:\?[^\]\s]+)?)\]/i;
 const Bp = U(FA, ([t, e])=>({
         type: "video",
         unit: {
@@ -1812,7 +1812,7 @@ const Bp = U(FA, ([t, e])=>({
         children: e,
         fileId: ha.test(e) ? be(e) : undefined
     }));
-const DA = /\[((https?:\/\/[^\]\s]+)\s+(https?:\/\/[^\]\s]*\.(?:mp4|webm|mov)(?:\?[^\]\s]+)?))\]/i;
+const DA = /\[((https?:\/\/[^\]\s]+)\s+(https?:\/\/(?=[^\]\s]+\])[^\]\s]*\.(?:mp4|webm|mov)(?:\?[^\]\s]+)?))\]/i;
 const IA = U(DA, ([t, e, r, n])=>({
         type: "videoLink",
         unit: {
@@ -1828,7 +1828,7 @@ const IA = U(DA, ([t, e, r, n])=>({
         ].filter((s)=>s),
         children: e
     }));
-const jA = /\[((https?:\/\/[^\]\s]*\.(?:mp4|webm|mov)(?:\?[^\]\s]+)?)\s+(https?:\/\/[^\]\s]+))\]/i;
+const jA = /\[((https?:\/\/(?=[^\]\s]+\s+https?:\/\/[^\]\s]+\])[^\]\s]*\.(?:mp4|webm|mov)(?:\?[^\]\s]+)?)\s+(https?:\/\/[^\]\s]+))\]/i;
 const NA = U(jA, ([t, e, r, n])=>({
         type: "videoLink",
         unit: {
@@ -1911,7 +1911,7 @@ const zp = U(HA, ([t, e])=>({
         fileId: ha.test(e) ? be(e) : undefined,
         children: e
     }));
-const WA = /\[((https?:\/\/[^\s\]]+\.(?:wav|mp3|weba|ogg|aac))\s+([^\]]*))\]/i;
+const WA = /\[((https?:\/\/[^\s\]]+\.(?:wav|mp3|weba|ogg|aac))(?=\s[^\]]*\])\s+([^\]]*))\]/i;
 const YA = U(WA, ([t, e, r, n])=>({
         type: "audioLink",
         unit: {
@@ -1936,7 +1936,7 @@ const GA = U(VA, ([t, e, r, n])=>({
         children: e
     }));
 const Hp = Pe(YA, GA);
-const KA = /\[(https?:\/\/[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\]/i;
+const KA = /\[(https?:\/\/(?=[^\]\s]+\])[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\]/i;
 const Wp = U(KA, ([t, e])=>({
         type: "image",
         unit: {
@@ -1946,7 +1946,7 @@ const Wp = U(KA, ([t, e])=>({
         fileId: ha.test(e) ? be(e) : undefined,
         children: e
     }));
-const JA = /\[((https?:\/\/[^\]\s]+)\s+(https?:\/\/[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?))\]/i;
+const JA = /\[((https?:\/\/[^\]\s]+)\s+(https?:\/\/(?=[^\]\s]+\])[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?))\]/i;
 const QA = U(JA, ([t, e, r, n])=>({
         type: "imageLink",
         unit: {
@@ -1962,7 +1962,7 @@ const QA = U(JA, ([t, e, r, n])=>({
         ].filter((s)=>s),
         children: e
     }));
-const ZA = /\[((https?:\/\/[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\s+(https?:\/\/[^\]\s]+))\]/i;
+const ZA = /\[((https?:\/\/(?=[^\]\s]+\s+https?:\/\/[^\]\s]+\])[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\s+(https?:\/\/[^\]\s]+))\]/i;
 const XA = U(ZA, ([t, e, r, n])=>({
         type: "imageLink",
         unit: {
@@ -2280,7 +2280,7 @@ const SO = U(/\[\[(\/([a-zA-Z0-9-]+)\/([^[\]]+)\.icon([*x])([1-9]\d*))\]\]/, ([,
     };
 });
 const Zp = Pe(vO, SO, bO, wO);
-const xO = U(/\[\[(https?:\/\/[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\]\]/i, ([t, e])=>({
+const xO = U(/\[\[(https?:\/\/(?=[^\]\s]+\]\])[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\]\]/i, ([t, e])=>({
         type: "strongImage",
         unit: {
             whole: t,
@@ -2305,7 +2305,7 @@ const CO = U(/\[\[(https?:\/\/(?:[a-z][a-z\d-]*[a-z\d]\.|i\.|)gyazo\.com\/[a-z\d
         },
         children: e
     }));
-const PO = U(/\[\[((https?:\/\/[^\]\s]+)\s+(https?:\/\/[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?))\]\]/, ([t, e, r, n])=>({
+const PO = U(/\[\[((https?:\/\/[^\]\s]+)\s+(https?:\/\/(?=[^\]\s]+\]\])[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?))\]\]/, ([t, e, r, n])=>({
         type: "strongImageLink",
         unit: {
             whole: t,
@@ -2316,7 +2316,7 @@ const PO = U(/\[\[((https?:\/\/[^\]\s]+)\s+(https?:\/\/[^\]\s]*\.(?:png|jpe?g|gi
         fileId: ha.test(n) ? be(n) : undefined,
         children: e
     }));
-const kO = U(/\[\[((https?:\/\/[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\s+(https?:\/\/[^\]\s]+))\]\]/, ([t, e, r, n])=>({
+const kO = U(/\[\[((https?:\/\/(?=[^\]\s]+\s+https?:\/\/[^\]\s]+\]\])[^\]\s]*\.(?:png|jpe?g|gif|svg|webp)(?:\?[^\]\s]+)?)\s+(https?:\/\/[^\]\s]+))\]\]/, ([t, e, r, n])=>({
         type: "strongImageLink",
         unit: {
             whole: t,
@@ -2368,7 +2368,7 @@ const LO = U(/\[\[((https?:\/\/(?:[a-z][a-z\d-]*[a-z\d]\.|i\.|)gyazo\.com\/[a-z\
         children: e
     }));
 const Xp = Pe(_O, CO, xO, EO, AO, OO, LO, PO, kO);
-const TO = /\[\[(https?:\/\/[^\]\s]+\.(?:mp4|webm|mov))\]\]/i;
+const TO = /\[\[(https?:\/\/(?=[^\]\s]+\]\])[^\]\s]+\.(?:mp4|webm|mov)(?:\?[^\]\s]+)?)\]\]/i;
 const em = U(TO, ([t, e])=>({
         type: "strongVideo",
         unit: {
@@ -2437,7 +2437,7 @@ const DO = U(/\[(https?:\/\/[^\s\]]+)\]/, ([, t])=>({
         fileId: ha.test(t) ? be(t) : undefined,
         children: t
     }));
-const IO = U(/\[((https?:\/\/[^\s\]]+)(\s+)([^\]]*[^\s]))\]/, ([, t, e, r, n])=>({
+const IO = U(/\[((https?:\/\/[^\s\]]+)(?=\s[^\]]*[^\s]\])(\s+)([^\]]*[^\s]))\]/, ([, t, e, r, n])=>({
         type: "urlLink",
         unit: {
             link: e,
@@ -2517,7 +2517,7 @@ function NO(t) {
     return r || t;
 }
 a_2(NO, "normalizeTime");
-const BO = U(/\[(https?:\/\/(?:www\.|music\.|)youtube\.com\/watch\?((?:[^\s\]]+&|)v=([a-zA-Z\d_-]+)(?:&[^\s\]]+|)))\]/, ([t, e, r, n])=>({
+const BO = U(/\[(https?:\/\/(?:www\.|music\.|)youtube\.com\/watch\?(?=[^\s\]]+\])((?:[^\s\]]+&|)v=([a-zA-Z\d_-]+)(?:&[^\s\]]+|)))\]/, ([t, e, r, n])=>({
         type: "youtube",
         unit: {
             whole: t,
@@ -2548,7 +2548,7 @@ const qO = U(/\[(https?:\/\/(?:www\.|)youtube\.com\/shorts\/([a-zA-Z\d_-]+)(?:\?
         },
         children: e
     }));
-const $O = U(/\[(https?:\/\/(?:www\.|music\.|)youtube\.com\/playlist\?((?:[^\s\]]+&|)list=([a-zA-Z\d_-]+)(?:&[^\s\]]+|)))\]/, ([t, e, r, listId])=>({
+const $O = U(/\[(https?:\/\/(?:www\.|music\.|)youtube\.com\/playlist\?(?=[^\s\]]+\])((?:[^\s\]]+&|)list=([a-zA-Z\d_-]+)(?:&[^\s\]]+|)))\]/, ([t, e, r, listId])=>({
         type: "youtube",
         unit: {
             whole: t,

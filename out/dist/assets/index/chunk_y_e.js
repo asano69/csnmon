@@ -1,4 +1,4 @@
-import { r } from "../chunks/chunk-3PYJHPBQ.js";
+import { r } from "../chunks/chunk-GCRJFCUZ.js";
 export const y_e = r("src/client/js/routes/middlewares/query.js");
 let _Z = 0;
 export function EZ(e, t) {

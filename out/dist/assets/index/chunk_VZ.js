@@ -1,4 +1,4 @@
-import { Ya, ta } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya, ta } from "../chunks/chunk-GCRJFCUZ.js";
 import { a } from "../chunks/chunk-FXCI2R73.js";
 const VZ = a(()=>document.getElementById("favicon"), "findFaviconTag");
 const K_e = VZ().href;

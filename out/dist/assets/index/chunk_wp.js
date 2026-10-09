@@ -1,4 +1,4 @@
-import { Ya, b } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya, b } from "../chunks/chunk-GCRJFCUZ.js";
 import { e } from "../chunks/chunk-FXCI2R73.js";
 const wp = e(b(), 1);
 export function R2({ projectName, query, enabled = true, minQueryLength, debounceMs }) {

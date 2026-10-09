@@ -1,4 +1,4 @@
-import { Na, Ya, r } from "../chunks/chunk-3PYJHPBQ.js";
+import { Na, Ya, r } from "../chunks/chunk-GCRJFCUZ.js";
 const S_e = r("src/client/js/routes/middlewares/restore-last-accessed-page.js");
 export function kZ() {
     if ([

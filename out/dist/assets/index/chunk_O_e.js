@@ -1,4 +1,4 @@
-import { Ya, p, r, y } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya, p, r, y } from "../chunks/chunk-GCRJFCUZ.js";
 import { a } from "../chunks/chunk-FXCI2R73.js";
 const O_e = r("src/client/js/routes/personal-settings.js");
 export const L_e = a((e)=>async ()=>{

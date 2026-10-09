@@ -1,4 +1,4 @@
-import { Fa, r } from "../chunks/chunk-3PYJHPBQ.js";
+import { Fa, r } from "../chunks/chunk-GCRJFCUZ.js";
 import { a, e } from "../chunks/chunk-FXCI2R73.js";
 export const Oi = e(Fa(), 1);
 const N_e = r("src/client/js/lib/scroll.js");

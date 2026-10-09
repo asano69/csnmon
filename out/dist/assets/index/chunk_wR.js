@@ -1,4 +1,4 @@
-import { F, J, K, Ya } from "../chunks/chunk-3PYJHPBQ.js";
+import { F, J, K, Ya } from "../chunks/chunk-GCRJFCUZ.js";
 const wR = new RegExp("^/([a-zA-Z\\d\\-]{2,})(?:/?|/([^/\\?]+))$");
 export function TR(e) {
     let t;

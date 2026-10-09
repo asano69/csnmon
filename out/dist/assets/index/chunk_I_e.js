@@ -1,4 +1,4 @@
-import { Ya, p, r, y } from "../chunks/chunk-3PYJHPBQ.js";
+import { Ya, p, r, y } from "../chunks/chunk-GCRJFCUZ.js";
 const I_e = r("src/client/js/routes/stream.js");
 export async function P_e(e) {
     let { projectName } = e.params;

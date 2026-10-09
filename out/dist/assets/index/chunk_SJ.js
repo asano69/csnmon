@@ -1,4 +1,4 @@
-import { b, x } from "../chunks/chunk-3PYJHPBQ.js";
+import { b, x } from "../chunks/chunk-GCRJFCUZ.js";
 import { a, e } from "../chunks/chunk-FXCI2R73.js";
 export const SJ = a(async ()=>{
     let { data } = await x.get("/api/settings/personal-access-tokens");

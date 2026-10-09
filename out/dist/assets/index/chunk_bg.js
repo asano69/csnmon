@@ -1,4 +1,4 @@
-import { b, ba } from "../chunks/chunk-3PYJHPBQ.js";
+import { b, ba } from "../chunks/chunk-GCRJFCUZ.js";
 import { e } from "../chunks/chunk-FXCI2R73.js";
 const bg = e(b(), 1);
 export function pd({ kind, searchQuery }) {

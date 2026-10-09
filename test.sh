@@ -11,8 +11,9 @@ mkdir -p "$ASSETS_DIR/css" "$ASSETS_DIR/chunks" dist out
 download() {
   local dest="$1"
   local url="$2"
+  local filename="${url##*/}"
 
-  wget -q -P "$dest" "$BASE_URL/$url"
+  wget -q -O "$dest/$filename" "$BASE_URL/$url"
   sleep "$DELAY"
 }
 
@@ -29,3 +30,5 @@ perl -nE 'say $1 while /(\.\/chunks\/chunk-[^"]+\.js)/g' \
   while read -r path; do
     download "$ASSETS_DIR/chunks" "assets/${path#./}"
   done
+
+npx wakaru dist/ --unpack -o out/

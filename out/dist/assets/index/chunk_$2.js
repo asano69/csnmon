@@ -1,4 +1,4 @@
-import { Fa, b } from "../chunks/chunk-3PYJHPBQ.js";
+import { Fa, b } from "../chunks/chunk-GCRJFCUZ.js";
 import { e } from "../chunks/chunk-FXCI2R73.js";
 import { ge } from "./chunk_ge.js";
 export const $2 = e(Fa(), 1);
